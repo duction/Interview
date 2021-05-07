@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#todo
+		{
+			display: none;
+			list-style: none;
+			margin-top:0px;
+			margin-bottom: 0px;
+		}
+		#box
+		{
+			border: 2px solid red;
+			height: auto;
+		}
+		#box ul li
+		{
+			background-color: red;
+			margin-left:-40px;
+			height:50px;
+			text-align: center;
+			border: 2px solid lime;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+	<input type="text" placeholder="add todo" id="addtodo">
+	<input type="button" value="add" onclick="addtodo()">
+	<input type="button" value="display" onclick="show()">
+	<ul id="todo">
+		<li>amit</li>
+		<li>Himanshu</li>
+	</ul>
+	</div>
+	<script type="text/javascript">
+function addtodo()
+{
+	document.getElementById("todo").style.display="none";
+	var names=document.getElementById("addtodo").value;
+    var li = document.createElement('li');
+    li.innerHTML = names;  
+    document.getElementById("todo").appendChild(li);
+}
+function show()
+{
+	document.getElementById("todo").style.display="block";
+}
+</script>
+</body>
+</html>
