@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#box
+		{
+			border:1px solid red;
+			height:100px;
+			width:100px;
+			margin-left: 45%;
+			margin-right: 45%;
+		}
+	</style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+</html>
